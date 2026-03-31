@@ -1,39 +1,71 @@
-# SkillSync 🚀
-
-SkillSync is a smart career tracking backend that helps users manage skills, track job applications, and receive personalized growth recommendations using data-driven insights.
-
 ---
 
 ## ✨ Features
-- Track skills with levels
-- Store data using database
-- REST APIs using FastAPI
-- Scalable backend structure
+
+- 📊 Track skills with proficiency levels  
+- 💾 Persistent storage using database  
+- ⚡ Fast REST APIs built with FastAPI  
+- 🧠 Foundation for smart recommendations  
 
 ---
 
-## 🛠 Tech Stack
-- FastAPI
-- Python
-- SQLAlchemy
-- SQLite
+## 🛠️ Tech Stack
+
+- **Backend:** FastAPI  
+- **Database:** SQLite (SQLAlchemy)  
+- **Language:** Python  
 
 ---
 
-## 🚀 Run Locally
+## 📂 Project Structure
+
+
+skill-sync/
+│
+├── main.py # API routes
+├── models.py # Database models
+├── database.py # DB connection
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 🚀 How to Run Locally
 
 ```bash
 git clone https://github.com/Ajay-Singh89/skill-sync.git
 cd skill-sync
 
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate   # Windows
 
 pip install -r requirements.txt
 uvicorn main:app --reload
+```
 
+📌 API Endpoints
+Method	Endpoint	Description
+GET	/	Check API status
+POST	/add-skill	Add a new skill
+GET	/skills	Get all skills
+POST	/signup	Create user
+
+---
 📌 Future Improvements
-User authentication (JWT)
-Resume analyzer
-Job tracking system
-Mobile app integration
+🔐 JWT Authentication
+🤖 Resume Analyzer (NLP-based)
+💼 Job Application Tracking
+📱 Mobile App Integration (Flutter)
+
+---
+
+👨‍💻 Author
+
+Ajay Singh
+
+---
+
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
